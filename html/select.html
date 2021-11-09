@@ -4,12 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            $.getJSON('/persons', function(data) {
+            $.getJSON('/products', function(data) {
                 var table = '<table border="1">';
                 /* loop over each object in the array to create rows*/
                 $.each(data, function(index, item) {
                     /* add to html string started above*/
-                    table += '<tr><td>' + item.PersonID + '</td><td>' + item.Firstname + '</td><td>' + item.Lastname + '</td></tr>';
+                    table += '<tr><td>' + item.varekode + '</td><td>' + item.varenummer + '</td><td>' + item.antal + '</td></tr>';
                 });
                 table += '</table>';
                 /* insert the html string*/

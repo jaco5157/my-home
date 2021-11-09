@@ -1,9 +1,9 @@
-CREATE DATABASE people;
+CREATE DATABASE products;
 
-USE people;
+USE products;
 
-CREATE TABLE people_table (
-	personid int(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	firstname VARCHAR(50) NOT NULL,
-	lastname VARCHAR(50) NOT NULL
+CREATE TABLE inventory (
+	varekode int(6) UNSIGNED PRIMARY KEY,
+	varenummer VARCHAR(50) NOT NULL,
+	antal int NOT NULL
 );
